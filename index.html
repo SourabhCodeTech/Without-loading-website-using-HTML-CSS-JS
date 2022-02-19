@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> With Out Loading Website Using HTML, CSS and JS!</title>
+</head>
+<style>
+    .nav-link {
+        cursor: pointer;
+    }
+
+    .sticky-footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    ::-webkit-scrollbar {
+        background: #dc3545;
+        border-radius: 2px;
+        width: 25px;
+    }
+
+    ::-webkit-scrollbar-button {
+        background-color: #ffbf01;
+        border: 2px solid white;
+        border-radius: 9px;
+        background-image: url(./Images/unsplash-photo-2.jpg);
+        background-size: cover;
+        height: 30px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        background: black;
+        border: 3px solid #f0b70d;
+    }
+</style>
+
+<body id="body">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Hindi Coding</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="homeli">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="serviceli">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contactli">Contact Us!</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="home">
+        <div class="container-fluid">
+            <h1 class="text-center mt-4">Welcome To Hindi Coding</h1>
+            <main id="hero">
+                <div class="container col-xxl-8 px-4 py-5">
+                    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                        <div class="col-10 col-sm-8 col-lg-6">
+                            <img src="./Images/unsplash-photo-2.jpg"
+                                class="d-block mx-lg-auto img-fluid rounded-3 shadow-lg" alt="Bootstrap Themes"
+                                width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="display-5 fw-bold lh-1 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </h1>
+                            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium totam
+                                quia magnam, obcaecati in modi, sequi necessitatibus, sint et qui dolores eaque nulla
+                                consectetur ipsam minus itaque eos saepe tempore ducimus quo ut? Optio.
+                            </p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Demo</button>
+                                <button type="button" class="btn btn-outline-primary btn-lg px-4">About</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer class="footer mt-auto py-3 bg-dark">
+            <div class="container-fluid text-center">
+                <span class="text-white">Hindi Coding.com | Hindi Coding</span>
+            </div>
+        </footer>
+    </div>
+    <div id="sevices" style="display: none;">
+        <h1 class="text-center mt-5">Welcome To Hindi Coding Service</h1>
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom">My Recent Blog Post!</h2>
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                        style="background-image: url('Images/unsplash-photo-1.jpg'); background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">In Moon Coding You have to Laern
+                                JavaScript</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Download This Course: 50M</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>View This Course: 60M</small>
+                                </li>
+                            </ul>
+                            <button class="btn btn-dark">JS Learn</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                        style="background-image: url('Images/unsplash-photo-2.jpg');background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">In Flower Coding You have to Learn
+                                Node JS</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Download This Course: 40M</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>View This Course: 90M</small>
+                                </li>
+                            </ul>
+                            <button class="btn btn-dark">Learn Node JS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                        style="background-image: url('Images/unsplash-photo-3.jpg');background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">In JellyFish Coding You have to Learn
+                                React JS, Next JS</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Download This Course: 890M</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>View This Course: 1048M</small>
+                                </li>
+                            </ul>
+                            <button class="btn btn-dark">Learn React JS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                        style="background-image: url('Images/unsplash-photo-1.jpg'); background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">In Moon Coding You have to Laern
+                                JavaScript</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Download This Course: 50M</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>View This Course: 60M</small>
+                                </li>
+                            </ul>
+                            <button class="btn btn-dark">JS Learn</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                        style="background-image: url('Images/unsplash-photo-2.jpg');background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">In Flower Coding You have to Learn
+                                Node JS</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Download This Course: 40M</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>View This Course: 90M</small>
+                                </li>
+                            </ul>
+                            <button class="btn btn-dark">Learn Node JS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                        style="background-image: url('Images/unsplash-photo-3.jpg');background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">In JellyFish Coding You have to Learn
+                                React JS, Next JS</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Download This Course: 890M</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>View This Course: 1048M</small>
+                                </li>
+                            </ul>
+                            <button class="btn btn-dark">Learn React JS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                        style="background-image: url('Images/unsplash-photo-1.jpg'); background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">In Moon Coding You have to Laern
+                                JavaScript</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Download This Course: 50M</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>View This Course: 60M</small>
+                                </li>
+                            </ul>
+                            <button class="btn btn-dark">JS Learn</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                        style="background-image: url('Images/unsplash-photo-2.jpg');background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">In Flower Coding You have to Learn
+                                Node JS</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Download This Course: 40M</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>View This Course: 90M</small>
+                                </li>
+                            </ul>
+                            <button class="btn btn-dark">Learn Node JS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                        style="background-image: url('Images/unsplash-photo-3.jpg');background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">In JellyFish Coding You have to Learn
+                                React JS, Next JS</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Download This Course: 890M</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>View This Course: 1048M</small>
+                                </li>
+                            </ul>
+                            <button class="btn btn-dark">Learn React JS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                        style="background-image: url('Images/unsplash-photo-1.jpg'); background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">In Moon Coding You have to Laern
+                                JavaScript</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Download This Course: 50M</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>View This Course: 60M</small>
+                                </li>
+                            </ul>
+                            <button class="btn btn-dark">JS Learn</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                        style="background-image: url('Images/unsplash-photo-2.jpg');background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">In Flower Coding You have to Learn
+                                Node JS</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Download This Course: 40M</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>View This Course: 90M</small>
+                                </li>
+                            </ul>
+                            <button class="btn btn-dark">Learn Node JS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                        style="background-image: url('Images/unsplash-photo-3.jpg');background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">In JellyFish Coding You have to Learn
+                                React JS, Next JS</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Download This Course: 890M</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>View This Course: 1048M</small>
+                                </li>
+                            </ul>
+                            <button class="btn btn-dark">Learn React JS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                        style="background-image: url('Images/unsplash-photo-1.jpg'); background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">In Moon Coding You have to Laern
+                                JavaScript</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Download This Course: 50M</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>View This Course: 60M</small>
+                                </li>
+                            </ul>
+                            <button class="btn btn-dark">JS Learn</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                        style="background-image: url('Images/unsplash-photo-2.jpg');background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">In Flower Coding You have to Learn
+                                Node JS</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Download This Course: 40M</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>View This Course: 90M</small>
+                                </li>
+                            </ul>
+                            <button class="btn btn-dark">Learn Node JS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                        style="background-image: url('Images/unsplash-photo-3.jpg');background-size: cover;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">In JellyFish Coding You have to Learn
+                                React JS, Next JS</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Download This Course: 890M</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>View This Course: 1048M</small>
+                                </li>
+                            </ul>
+                            <button class="btn btn-dark">Learn React JS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer mt-auto py-3 bg-dark">
+            <div class="container-fluid text-center">
+                <span class="text-white">Hindi Coding.com | Hindi Coding</span>
+            </div>
+        </footer>
+    </div>
+    <div id="contact" style="display: none">
+        <h1 class="text-center">Contact Us!</h1>
+        <form class="container">
+            <input type="text" class="mt-4 form-control" placeholder="Enter Name">
+            <input type="email" class="mt-4 form-control" placeholder="Enter E-mail">
+            <input type="password" class="mt-4 form-control" placeholder="Enter Password">
+            <input type="password" class="mt-4 form-control" placeholder="Enter Retry Password">
+            <input type="number" class="mt-4 form-control" placeholder="Enter Phone Number">
+            <button class="btn btn-outline-dark mt-2 mr-5" type="reset">Reset Form</button>
+            <button class="btn btn-outline-dark mt-2" type="submit">Submit Form</button>
+        </form>
+        <br>
+        <br>
+        <br>
+        <footer class="footer mt-auto py-3 bg-dark sticky-footer">
+            <div class="container-fluid text-center">
+                <span class="text-white">Hindi Coding.com | Hindi Coding</span>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    let conli = document.getElementById("contactli");
+    let holi = document.getElementById("homeli");
+    let serli = document.getElementById("serviceli");
+    let home = document.getElementById("home");
+    let service = document.getElementById("sevices");
+    let contact = document.getElementById("contact");
+
+    holi.addEventListener("click", () => {
+        home.style.display = "block";
+        contact.style.display = "none";
+        service.style.display = "none";
+        serli.classList.remove("active");
+        conli.classList.remove("active");
+        holi.classList.add("active");
+    })
+
+    conli.addEventListener("click", () => {
+        document.getElementById("body").append(contact)
+        contact.style.display = "block";
+        conli.classList.add("active");
+        serli.classList.remove("active");
+        holi.classList.remove("active");
+        home.style.display = "none";
+        service.style.display = "none";
+    })
+
+    serli.addEventListener("click", () => {
+        contact.style.display = "none";
+        home.style.display = "none";
+        conli.classList.remove("active");
+        holi.classList.remove("active");
+        serli.classList.add("active");
+        service.style.display = "block";
+    })
+</script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+
+</html>
